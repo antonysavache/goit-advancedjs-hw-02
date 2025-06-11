@@ -1,0 +1,106 @@
+/* Стили для формы генератора промисов */
+.form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.form label {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.form input[type="number"] {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  margin-top: 8px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.form input[type="number"]:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.form fieldset {
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+  background-color: #f9f9f9;
+}
+
+.form legend {
+  font-weight: 600;
+  color: #333;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.form fieldset label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: normal;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.form fieldset label:hover {
+  color: #4a90e2;
+}
+
+.form fieldset label:last-child {
+  margin-bottom: 0;
+}
+
+.form input[type="radio"] {
+  margin-right: 10px;
+  margin-top: 0;
+  width: auto;
+  transform: scale(1.2);
+  accent-color: #4a90e2;
+}
+
+.form button[type="submit"] {
+  width: 100%;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 15px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.form button[type="submit"]:hover {
+  background-color: #357abd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}
+
+.form button[type="submit"]:active {
+  transform: translateY(0);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .form {
+    margin: 20px;
+    padding: 20px;
+  }
+}
